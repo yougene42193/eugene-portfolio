@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+button {
+    cursor: pointer;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+}
+
+.nav-menu {
+    position: relative;
+    background-color: black;
+    border: 2px solid black;
+    float: right;
+}
+
+.menu-bar {
+    width: 15px;
+    height: 2px;
+    background-color: white;
+    margin: 2px 0;
+}
+
+ul {
+    list-style: none;
+    display: none;
+    justify-content: space-evenly;
+}
+
+a {
+    cursor: pointer;
+}
+
+main {
+    margin-top: 75px;
+    text-align: center;
+}
+
+section {
+    min-height: 200px;
+    padding: 6% 0;
+}
+
+.quiz-app {
+    width: 70%;
+}
+
+.quiz-thumbnail img {
+    width: 20%;
+}
+
+img {
+    border: 2px solid black;
+}
+
+footer {
+    text-align: center;
+}
