@@ -1,7 +1,5 @@
 * {
     box-sizing: border-box;
-    margin-left: auto;
-    margin-right: auto; 
 }
 
 html, body {
@@ -35,10 +33,11 @@ nav {
     background-color: white;
     margin: 2px 0;
 }
-
+/* change display to flex in js*/
 ul {
     list-style: none;
     display: none;
+    justify-content: space-evenly;
 }
 
 ul a {
