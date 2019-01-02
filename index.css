@@ -39,11 +39,16 @@ nav {
 ul {
     list-style: none;
     display: none;
-    justify-content: space-evenly;
+}
+
+ul a {
+    text-decoration: none;
+    color: white;
 }
 
 a {
     cursor: pointer;
+    color: black;
 }
 
 main {
@@ -70,4 +75,21 @@ img {
 
 footer {
     text-align: center;
+}
+
+@media only screen and (min-width: 700px) {
+    ul {
+        display: flex;
+        float: right;
+        justify-content: space-evenly;
+        margin-right: 20px;
+    }
+
+    ul li {
+        margin-left: 20px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
 }
