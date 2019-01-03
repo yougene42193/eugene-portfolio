@@ -1,11 +1,12 @@
 * {
     box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 html, body {
-    margin: 0px;
-    padding: 0px;
     overflow-x: hidden;
+    margin: 0 auto;
 }
 
 button {
@@ -53,6 +54,7 @@ a {
 main {
     margin-top: 75px;
     text-align: center;
+    max-width: 1080px;
 }
 
 section {
@@ -72,11 +74,27 @@ img {
     border: 2px solid black;
 }
 
-footer {
-    text-align: center;
+.link-icons {
+    margin-left: 20px;
+    text-align: left;
 }
 
-@media only screen and (min-width: 700px) {
+.link-icons span {
+    font-size: 18px;
+}
+
+.portfolio button {
+    padding: 10px 40px;
+}
+
+.project-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media only screen and (min-width: 685px) {
     ul {
         display: flex;
         float: right;
@@ -91,4 +109,73 @@ footer {
     .nav-menu {
         display: none;
     }
+
+    nav span {
+        font-size: 30px;
+        line-height: 200%;
+        margin-left: 20px;
+    }
+
+    .menu-links {
+        font-size: 20px;
+    }
+
+    h1, h2 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 30px;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .portfolio button {
+        padding: 20px 80px;
+        font-size: 30px;
+    }
+    
+    .project-buttons {
+        margin-left: 100px;
+        margin-right: 100px;
+        
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    
+    nav {
+        display: flex;
+        height: 100%;
+        width: 20%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav span {
+        position: absolute;
+    }
+
+    ul {
+        display: block;
+        margin-top: 80px;
+        float: left;
+    }
+
+    main {
+        margin-left: 30%;
+        margin-right: 10%;
+        margin-top: -2%;
+    }
+
+    ul li {
+        text-align: left;
+        margin-top: 50px;
+        font-size: 125%;
+    }
+
 }
