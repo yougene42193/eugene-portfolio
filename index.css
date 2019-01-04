@@ -35,11 +35,11 @@ p {
 .link-icons span {
     font-family: 'Didact Gothic', sans-serif;
     font-size: 20px;
-    color: white;
+    color: rgb(0, 29, 82);
 }
 
 .fa {
-    color: white;
+    color: rgb(0, 29, 82);
 }
 
 button {
@@ -134,6 +134,7 @@ img {
 }
 
 .link-icons span {
+    color: rgb(0, 29, 82);
     font-size: 18px;
 }
 
@@ -153,12 +154,6 @@ img {
     justify-content: space-evenly;
     margin-left: 10px;
     margin-right: 10px;
-}
-
-.contact {
-    background-color: rgb(0, 100, 158);
-    color: white;
-    padding: 30px;
 }
 
 @media only screen and (min-width: 685px) {
@@ -233,6 +228,7 @@ img {
         width: 20%;
         align-items: center;
         justify-content: center;
+        padding-right: 50px;
     }
 
     nav span {
@@ -256,7 +252,7 @@ img {
     }
 
     ul li {
-        text-align: left;
+        text-align: center;
         margin-top: 50px;
         font-size: 125%;
     }
@@ -282,8 +278,9 @@ img {
     }
 
     .contact {
+        margin-top: 100px;
         background-color: rgb(232, 242, 255);
         color: rgb(0, 29, 82);
-        border-top: solid rgb(0, 29, 82);
+        padding: 100px;
     }
 }

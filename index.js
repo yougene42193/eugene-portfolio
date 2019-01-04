@@ -1,10 +1,16 @@
 'use strict';
 function handleMenu() {
   $('.nav-menu').on('click', function() {
-    $('ul').css('display', 'flex');
-    $('.nav-menu').on('click', function() {
-      $('ul').css('display', 'none');
-    });
+    console.log('menu clicked');
+    $(this).next('ul').css('display', 'flex');
+    closeMenu();
+  });
+}
+
+function closeMenu() {
+  $('.nav-menu').on('click', function() {
+    console.log('close menu');
+    $('ul').toggle();
   });
 }
 
@@ -12,11 +18,12 @@ function generateAbout() {
   $('.js-about').on('click', function() {
     console.log('About clicked');
     renderAbout();
+    closeMenu();
   });
 }
 
 function renderAbout() {
-  $('.article').html(`
+  $('.container').html(`
   <section role="region" class="about">
     <h1>Hi, my name is Eugene</h1>
       <p>I am a full-stack developer and an aspiring UI/UX designer.</p>
@@ -31,11 +38,12 @@ function generatePortfolio() {
   $('.js-portfolio').on('click', function() {
     console.log('portfolio clicked');
     renderPortfolio();
+    closeMenu();
   });
 }
 
 function renderPortfolio() {
-  $('.article').html(`
+  $('.container').html(`
   <section role="region" class="portfolio">
     <h2>Portfolio</h2>
     <h3>NBA Quiz App</h3>
@@ -57,27 +65,27 @@ function renderPortfolio() {
   handleThumbnailChange();
   console.log('portfolio generated');
 }
-/*
+
 function generateContact() {
   $('.js-contact').on('click', function() {
     console.log('contact clicked');
-    return `
-    <section role="region" class="contact">
-            <h2>Contact</h2>
-            <div class="link-icons">
-                <p><a class="gh-link" href="https://github.com/yougene42193" target="_blank"><i class="fa fa-github" style="font-size:24px"><span> Github</span></i></a></p>
-                <p><a class="in-link" href="https://www.linkedin.com/in/eugene-song-760071178" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px"><span> Linkedin</span></i></a></p>
-                <p><a class="email-link" href="mailto: yougene42193@gmail.com"><i class="fa fa-envelope" style="font-size:20px"><span> yougene42193@gmail.com</span></i></a></p>
-            </div>
-        </section>`;
+    renderContact(); 
   });
 }
 
 function renderContact() {
-  $('.article').html(generateContact());
+  $('.container').html(`
+  <section role="region" class="contact">
+          <h2>Contact</h2>
+          <div class="link-icons">
+              <p><a class="gh-link" href="https://github.com/yougene42193" target="_blank"><i class="fa fa-github" style="font-size:24px"><span> Github</span></i></a></p>
+              <p><a class="in-link" href="https://www.linkedin.com/in/eugene-song-760071178" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px"><span> Linkedin</span></i></a></p>
+              <p><a class="email-link" href="mailto: yougene42193@gmail.com"><i class="fa fa-envelope" style="font-size:20px"><span> yougene42193@gmail.com</span></i></a></p>
+          </div>
+      </section>`);
   console.log('contact generated');
 }
-*/
+/*
 function scrollContact() {
   $('.js-contact').on('click', function() {
     console.log('contact clicked');
@@ -86,10 +94,11 @@ function scrollContact() {
     },
     1000);
   });
-}
+}*/
 
 function scrollTop() {
   $(document).ready(function() {
+    console.log('page refreshed');
     $('body').scrollTop(0);
   });
 }
@@ -108,7 +117,7 @@ function createPortfolio() {
   renderAbout();
   generateAbout();
   generatePortfolio();
-  scrollContact();
+  generateContact();
   scrollTop();
 }
 
