@@ -6,7 +6,7 @@ function handleMenu() {
       $('ul').css('display', 'none');
     });
   });
-};
+}
 
 function generateAbout() {
   $('.js-about').on('click', function() {
@@ -20,7 +20,7 @@ function renderAbout() {
   <section role="region" class="about">
     <h1>Hi, my name is Eugene</h1>
       <p>I am a full-stack developer and an aspiring UI/UX designer.</p>
-      <p>I am currently a student in Thinkful's Full Stack Flex Bootcamp. I've always had a passion for design and while working with HTML, CSS,Javascript, and jQuery, I can see my idea's come to life.
+      <p>I am currently a student in Thinkful's Full Stack Flex Bootcamp. I've always had a passion for design and while working with HTML, CSS, Javascript, and jQuery, I can see my idea's come to life.
           When I'm not coding I love to play video games, watch and talk about sports.</p>
   </section>` );
   console.log('About generated');
@@ -29,7 +29,7 @@ function renderAbout() {
 
 function generatePortfolio() {
   $('.js-portfolio').on('click', function() {
-    console.log('portfolio clicked')
+    console.log('portfolio clicked');
     renderPortfolio();
   });
 }
@@ -57,7 +57,7 @@ function renderPortfolio() {
   handleThumbnailChange();
   console.log('portfolio generated');
 }
-
+/*
 function generateContact() {
   $('.js-contact').on('click', function() {
     console.log('contact clicked');
@@ -77,6 +77,22 @@ function renderContact() {
   $('.article').html(generateContact());
   console.log('contact generated');
 }
+*/
+function scrollContact() {
+  $('.js-contact').on('click', function() {
+    console.log('contact clicked');
+    $('html, body').animate({
+      scrollTop: $('.contact').offset().top+$('.contact').height()
+    },
+    1000);
+  });
+}
+
+function scrollTop() {
+  $(document).ready(function() {
+    $('body').scrollTop(0);
+  });
+}
 
 function handleThumbnailChange() {
   $('.quiz-thumbnail').on('click', function() {
@@ -87,9 +103,13 @@ function handleThumbnailChange() {
   });
 }
 
+function createPortfolio() {
+  handleMenu();
+  renderAbout();
+  generateAbout();
+  generatePortfolio();
+  scrollContact();
+  scrollTop();
+}
 
-$(handleMenu);
-$(renderAbout);
-$(generateAbout);
-$(generatePortfolio);
-$(generateContact);
+$(createPortfolio);
