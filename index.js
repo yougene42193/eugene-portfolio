@@ -47,22 +47,40 @@ function renderPortfolio() {
   <section role="region" class="portfolio">
     <h2>Portfolio</h2>
     <h3>NBA Quiz App</h3>
-    <div class="hero">
+    <div class="quiz-hero">
         <img src="https://i.imgur.com/Q4HZ3hr.jpg" class="quiz-app main-img" />
     </div>
     <div class="quiz-thumbnails">
-        <a class="quiz-thumbnail"><img src="https://i.imgur.com/Q4HZ3hr.jpg" alt="mobile-view-1" /></a>
-        <a class="quiz-thumbnail"><img src="https://i.imgur.com/UoLMm9S.jpg" alt="mobile-view-2" /></a>
-        <a class="quiz-thumbnail"><img src="https://i.imgur.com/THB8zfl.jpg" alt="desktop-view-1" /></a>
-        <a class="quiz-thumbnail"><img src="https://i.imgur.com/q61o7kL.jpg" alt="desktop-view-2" /></a>
+        <a class="quiz-thumbnail"><img src="https://i.imgur.com/Q4HZ3hr.jpg" alt="quiz-mobile-view-1" /></a>
+        <a class="quiz-thumbnail"><img src="https://i.imgur.com/UoLMm9S.jpg" alt="quiz-mobile-view-2" /></a>
+        <a class="quiz-thumbnail"><img src="https://i.imgur.com/THB8zfl.jpg" alt="quiz-desktop-view-1" /></a>
+        <a class="quiz-thumbnail"><img src="https://i.imgur.com/q61o7kL.jpg" alt="quiz-desktop-view-2" /></a>
     </div>
     <p>The NBA Quiz App is a simple quiz app that tests your knowledge on random facts in the NBA. The app uses HTML, CSS, Javascript and jQuery.</p>
     <div class="project-buttons">
         <a class="code-link" href="https://github.com/yougene42193/quiz-app" target="_blank"><button type="button" class="btn-code">Code</button></a>
         <a class="live-link" href="https://yougene42193.github.io/quiz-app/" target="_blank"><button type="button" class="btn-live">Live</button></a>
     </div>
+    <h3>Gameplay Search</h3>
+    <div class="GP-Search-hero">
+        <img src="Screenshots/Landing-Page-Screenshot.JPG" class="gp-search main-img" />
+    </div>
+    <div class="gp-thumbnails">
+        <a class="gp-thumbnail"><img src="Screenshots/Landing-Page-Screenshot.JPG" alt="gameplay-search-desktop-view-1" /></a>
+        <a class="gp-thumbnail"><img src="Screenshots/Results-Page-Screenshot-1.JPG" alt="gameplay-search-desktop-view-2" /></a>
+        <a class="gp-thumbnail"><img src="Screenshots/Results-Page-Screenshot-2.JPG" alt="gameplay-search-desktop-view-3" /></a>
+        <a class="gp-thumbnail"><img src="Screenshots/gpsearch-mobile1.jpg" alt="gameplay-search-mobile-view-1" /></a>
+        <a class="gp-thumbnail"><img src="Screenshots/gpsearch-mobile2.jpg" alt="gameplay-search-mobile-view-2" /></a>
+        <a class="gp-thumbnail"><img src="Screenshots/gpsearch-mobile3.jpg" alt="gameplay-search-mobile-view-3" /></a>
+    </div>
+    <p>Gameplay Search allows the user to search for any game and will return results with an image of the game and an overview of the game with the GiantBomb API, gameplay videos with the Youtube API and live streams with the Twitch API. The app uses HTML, CSS, Javascript and jQuery/Ajax.</p>
+    <div class="project-buttons">
+        <a class="code-link" href="https://github.com/yougene42193/Gameplay-Search" target="_blank"><button type="button" class="btn-code">Code</button></a>
+        <a class="live-link" href="https://yougene42193.github.io/Gameplay-Search/" target="_blank"><button type="button" class="btn-live">Live</button></a>
+    </div>
   </section>`);
-  handleThumbnailChange();
+  handleQuizThumbnailChange();
+  handleGPSearchThumbnailChange();
   console.log('portfolio generated');
 }
 
@@ -103,12 +121,21 @@ function scrollTop() {
   });
 }
 
-function handleThumbnailChange() {
+function handleQuizThumbnailChange() {
   $('.quiz-thumbnail').on('click', function() {
-    console.log('thumbnail clicked');
+    console.log('quiz thumbnail clicked');
     const imgSrc = $(this).find('img').attr('src');
 
-    $('.hero img').attr('src', imgSrc);
+    $('.quiz-hero img').attr('src', imgSrc);
+  });
+}
+
+function handleGPSearchThumbnailChange() {
+  $('.gp-thumbnail').on('click', function() {
+    console.log('search thumbnail clicked');
+    const imgSrc = $(this).find('img').attr('src');
+
+    $('.GP-Search-hero img').attr('src', imgSrc);
   });
 }
 

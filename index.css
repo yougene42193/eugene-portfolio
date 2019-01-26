@@ -124,6 +124,14 @@ section {
     width: 16.5%;
 }
 
+.gp-search {
+    width: 70%;
+}
+
+.gp-thumbnail img {
+    width: 16.5%;
+}
+
 img {
     border: 2px solid black;
 }
