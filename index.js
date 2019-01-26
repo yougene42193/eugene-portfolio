@@ -69,9 +69,9 @@ function renderPortfolio() {
         <a class="gp-thumbnail"><img src="Screenshots/Landing-Page-Screenshot.JPG" alt="gameplay-search-desktop-view-1" /></a>
         <a class="gp-thumbnail"><img src="Screenshots/Results-Page-Screenshot-1.JPG" alt="gameplay-search-desktop-view-2" /></a>
         <a class="gp-thumbnail"><img src="Screenshots/Results-Page-Screenshot-2.JPG" alt="gameplay-search-desktop-view-3" /></a>
-        <a class="gp-thumbnail"><img src="Screenshots/gpsearch-mobile1.jpg" alt="gameplay-search-mobile-view-1" /></a>
-        <a class="gp-thumbnail"><img src="Screenshots/gpsearch-mobile2.jpg" alt="gameplay-search-mobile-view-2" /></a>
-        <a class="gp-thumbnail"><img src="Screenshots/gpsearch-mobile3.jpg" alt="gameplay-search-mobile-view-3" /></a>
+        <a class="gp-thumbnail"><img src="Screenshots/gpsearch-mobile1.JPG" alt="gameplay-search-mobile-view-1" /></a>
+        <a class="gp-thumbnail"><img src="Screenshots/gpsearch-mobile2.JPG" alt="gameplay-search-mobile-view-2" /></a>
+        <a class="gp-thumbnail"><img src="Screenshots/gpsearch-mobile3.JPG" alt="gameplay-search-mobile-view-3" /></a>
     </div>
     <p>Gameplay Search allows the user to search for any game and will return results with an image of the game and an overview of the game with the GiantBomb API, gameplay videos with the Youtube API and live streams with the Twitch API. The app uses HTML, CSS, Javascript and jQuery/Ajax.</p>
     <div class="project-buttons">
