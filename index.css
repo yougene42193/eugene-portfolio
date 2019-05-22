@@ -69,8 +69,8 @@ nav {
 
 .nav-menu {
     position: relative;
-    background-color: rgb(103, 144, 255);
-    border: 2px solid rgb(103, 144, 255);
+    background-color: rgb(245, 245, 245);
+    border: 2px solid rgb(245, 245, 245);
     float: right;
     font-size: 16px;
 }
@@ -78,31 +78,31 @@ nav {
 .js-about {
     color: rgb(252, 57, 57);
     color: black;
-    border: 1px solid;
-    padding: 10px;
-    box-shadow: 5px 10px;
+    
+
+    
 }
 
 .js-portfolio {
     color: rgb(255, 187, 0);
     color: black;
-    border: 1px solid;
-    padding: 10px;
-    box-shadow: 5px 10px;
+   
+
+   
 }
 
 .js-contact {
     color: yellow;
     color: black;
-    border: 1px solid;
-    padding: 10px;
-    box-shadow: 5px 10px;
+    
+
+    
 }
 
 .menu-bar {
     width: 15px;
     height: 2px;
-    background-color: white;
+    background-color: black;
     margin: 2px 0;
 }
 
@@ -287,6 +287,27 @@ img {
 
     .gameplay-section {
         padding-top: 100px;
+    }
+
+    .js-about {
+        color: black;
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 5px 10px;
+    }
+    
+    .js-portfolio {
+        color: black;
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 5px 10px;
+    }
+    
+    .js-contact {
+        color: black;
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 5px 10px;
     }
 }
 
