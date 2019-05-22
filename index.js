@@ -25,7 +25,8 @@ function generateAbout() {
 function renderAbout() {
   $('.container').html(`
   <section role="region" class="about">
-    <h1>Hi, my name is Eugene</h1>
+    <h1>About</h1>
+      <p>Hi, my name is Eugene</p>
       <p>I am a full-stack developer and an aspiring UI/UX designer.</p>
       <p>I am currently a student in Thinkful's Full Stack Flex Bootcamp. I've always had a passion for design and while working with HTML, CSS, Javascript, and jQuery, I can see my idea's come to life.
           When I'm not coding I love to play video games, watch and talk about sports.</p>
@@ -61,22 +62,24 @@ function renderPortfolio() {
         <a class="code-link" href="https://github.com/yougene42193/quiz-app" target="_blank"><button type="button" class="btn-code">Code</button></a>
         <a class="live-link" href="https://yougene42193.github.io/quiz-app/" target="_blank"><button type="button" class="btn-live">Live</button></a>
     </div>
-    <h3>Gameplay Search</h3>
-    <div class="GP-Search-hero">
-        <img src="Screenshots/Landing-Page-Screenshot.JPG" class="gp-search main-img" />
-    </div>
-    <div class="gp-thumbnails">
+    <div class='gameplay-section'>
+      <h3>Gameplay Search</h3>
+      <div class="GP-Search-hero">
+          <img src="Screenshots/Landing-Page-Screenshot.JPG" class="gp-search main-img" />
+      </div>
+      <div class="gp-thumbnails">
         <a class="gp-thumbnail"><img src="Screenshots/Landing-Page-Screenshot.JPG" alt="gameplay-search-desktop-view-1" /></a>
         <a class="gp-thumbnail"><img src="Screenshots/Results-Page-Screenshot-1.JPG" alt="gameplay-search-desktop-view-2" /></a>
         <a class="gp-thumbnail"><img src="Screenshots/Results-Page-Screenshot-2.JPG" alt="gameplay-search-desktop-view-3" /></a>
         <a class="gp-thumbnail"><img src="Screenshots/gpsearch-mobile1.JPG" alt="gameplay-search-mobile-view-1" /></a>
         <a class="gp-thumbnail"><img src="Screenshots/gpsearch-mobile2.JPG" alt="gameplay-search-mobile-view-2" /></a>
         <a class="gp-thumbnail"><img src="Screenshots/gpsearch-mobile3.JPG" alt="gameplay-search-mobile-view-3" /></a>
-    </div>
-    <p>Gameplay Search allows the user to search for any game and will return results with an image of the game and an overview of the game with the GiantBomb API, gameplay videos with the Youtube API and live streams with the Twitch API. The app uses HTML, CSS, Javascript and jQuery/Ajax.</p>
-    <div class="project-buttons">
+      </div>
+      <p>Gameplay Search allows the user to search for any game and will return results with an image of the game and an overview of the game with the GiantBomb API, gameplay videos with the Youtube API and live streams with the Twitch API. The app uses HTML, CSS, Javascript and jQuery/Ajax.</p>
+      <div class="project-buttons">
         <a class="code-link" href="https://github.com/yougene42193/Gameplay-Search" target="_blank"><button type="button" class="btn-code">Code</button></a>
         <a class="live-link" href="https://yougene42193.github.io/Gameplay-Search/" target="_blank"><button type="button" class="btn-live">Live</button></a>
+      </div>
     </div>
   </section>`);
   handleQuizThumbnailChange();

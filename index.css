@@ -10,12 +10,21 @@ html, body {
 }
 
 body {
-    background-color: rgb(232, 242, 255);
-    color: rgb(0, 29, 82);
+    background-color: rgb(245, 245, 245);
+    color: black;
+}
+
+h1 {
+    border-bottom: 3px double black;
+}
+
+h2 {
+    border-bottom: 3px double black;
 }
 
 h1, h2, h3 {
-    font-family: 'Patua One', cursive;
+    font-family: 'Martel', serif;
+    font-weight: bold;
 }
 
 h1, h2 {
@@ -46,15 +55,13 @@ button {
     cursor: pointer;
 }
 
-.project-buttons button:hover {
-    background-color: powderblue;
-    color: navy;
-}
 
 nav {
     font-family: 'Assistant', sans-serif;
-    background-color: rgb(0, 100, 158);
-    color: white;
+    font-weight: bold;
+    background: rgb(245, 245, 245);
+    box-shadow: 10px 10px 5px rgb(75, 75, 75);
+    color: rgb(0, 7, 105);
     position: fixed;
     width: 100%;
     padding: 10px;
@@ -62,10 +69,34 @@ nav {
 
 .nav-menu {
     position: relative;
-    background-color: rgb(0, 100, 158);
-    border: 2px solid rgb(0, 100, 158);
+    background-color: rgb(103, 144, 255);
+    border: 2px solid rgb(103, 144, 255);
     float: right;
     font-size: 16px;
+}
+
+.js-about {
+    color: rgb(252, 57, 57);
+    color: black;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px;
+}
+
+.js-portfolio {
+    color: rgb(255, 187, 0);
+    color: black;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px;
+}
+
+.js-contact {
+    color: yellow;
+    color: black;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px;
 }
 
 .menu-bar {
@@ -76,11 +107,14 @@ nav {
 }
 
 .menu-links a:hover {
-    color: navy;
+    color: black;
+    margin-bottom: -5px;
+    margin-right: -10px;
+    box-shadow: 0px 0px;
 }
 
 .link-icons  span:hover {
-    color: white;
+    color: lightblue;
 }
 
 /* change display to flex in js*/
@@ -109,6 +143,11 @@ main {
 
 .about {
     padding: 30px;
+    color: rgb(150, 0, 0);
+}
+
+.contact {
+    color: rgb(145, 145, 0);
 }
 
 section {
@@ -148,13 +187,27 @@ img {
 
 .portfolio {
     padding: 30px;
+    color: rgb(148, 96, 0);
 }
 
 .portfolio button {
-    color: white;
+    color: black;
     font-weight: bolder;
-    background-color: rgb(0, 100, 158);
+    background-color: rgb(148, 96, 0);
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    border-radius: 4px;
     padding: 10px 40px;
+    transition: .5s ease-out;
+}
+
+.project-buttons button:hover {
+    border-left: 5px solid salmon;
+    border-right: 5px solid salmon;
+    background-color: powderblue;
+    color: black;
 }
 
 .project-buttons {
@@ -164,6 +217,10 @@ img {
     margin-right: 10px;
 }
 
+.gameplay-section {
+    padding-top: 50px;
+}
+
 @media only screen and (min-width: 685px) {
     ul {
         display: flex;
@@ -171,6 +228,7 @@ img {
         justify-content: space-evenly;
         margin-right: 20px;
     }
+
 
     ul li {
         margin-left: 20px;
@@ -226,69 +284,13 @@ img {
         margin-right: 100px;
         
     }
+
+    .gameplay-section {
+        padding-top: 100px;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
     
-    nav {
-        display: flex;
-        height: 100%;
-        width: 20%;
-        align-items: center;
-        justify-content: center;
-        padding-right: 50px;
-    }
-
-    nav span {
-        position: absolute;
-    }
-
-    ul {
-        display: block;
-        margin-top: 80px;
-        float: left;
-    }
-
-    main {
-        margin-left: 30%;
-        margin-right: 10%;
-        margin-top: -2%;
-    }
-
-    p {
-        line-height: 50px;
-    }
-
-    ul li {
-        text-align: center;
-        margin-top: 50px;
-        font-size: 125%;
-    }
-
-    .about, .portfolio {
-        padding: 100px;
-    }
-
-    .about {
-        margin-top: 100px;
-    }
-
-    .portfolio p {
-        margin-bottom: 70px;
-    }
-
-    .link-icons span {
-        color: rgb(0, 29, 82);
-    }
-    
-    .fa {
-        color: rgb(0, 29, 82);
-    }
-
-    .contact {
-        margin-top: 100px;
-        background-color: rgb(232, 242, 255);
-        color: rgb(0, 29, 82);
-        padding: 100px;
-    }
+  
 }
