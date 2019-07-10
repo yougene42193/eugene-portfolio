@@ -79,7 +79,7 @@ nav {
     color: black;
 }
 
-.js-portfolio {
+.js-projects {
     color: black;
 }
 
@@ -122,7 +122,7 @@ a {
 main {
     margin-top: 75px;
     text-align: center;
-    max-width: 1080px;
+    max-width: 1600px;
     
 }
 
@@ -161,8 +161,33 @@ section {
     width: 70%;
 }   
 
+.kick-release {
+    width: 70%;
+}
+
 .sf-thumbnail img {
+    width: 100%;
+    
+    margin-right: 10px;
+}
+
+.kr-thumbnail img {
     width: 16.5%;
+}
+
+.sf-thumbnails {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 5%;
+    width: 70%;
+    border: 1px solid black;
+    overflow: scroll;
+    display: flex;
+    margin-bottom: 5%;
+    background-color: rgb(255, 180, 67);
+    -moz-box-shadow:    inset 0 0 20px #000000;
+    -webkit-box-shadow: inset 0 0 20px #000000;
+    box-shadow:         inset 0 0 20px #000000;
 }
 
 img {
@@ -179,12 +204,12 @@ img {
     font-size: 18px;
 }
 
-.portfolio {
+.projects {
     padding: 30px;
     color: rgb(148, 96, 0);
 }
 
-.portfolio button {
+.projects button {
     color: black;
     font-weight: bolder;
     background-color: rgb(148, 96, 0);
@@ -219,6 +244,60 @@ img {
     padding-top: 50px;
 }
 
+.kick-release-section {
+    padding-top: 50px;
+}
+
+.project-list-img {
+    width: 225px;
+    border: none;
+}
+
+.nba-quiz-list {
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.nba-quiz-list h3 {
+    font-size: 32px;
+}
+
+.gameplay-list {
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.gameplay-list h3 {
+    font-size: 32px;
+}
+
+.squad-list {
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.squad-list h3 {
+    font-size: 32px;
+}
+
+.kick-list {
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.kick-list h3 {
+    font-size: 32px;
+}
+
+
 @media only screen and (min-width: 760px) {
     ul {
         display: flex;
@@ -226,7 +305,6 @@ img {
         justify-content: space-evenly;
         margin-right: 20px;
     }
-
 
     ul li {
         margin-left: 20px;
@@ -272,7 +350,7 @@ img {
         padding: 60px;
     }
 
-    .portfolio button {
+    .projects button {
         padding: 15px 60px;
         font-size: 30px;
     }
@@ -284,11 +362,11 @@ img {
     }
 
     .gameplay-section {
-        padding-top: 100px;
+        
     }
 
     .squad-finder-section {
-        padding-top: 100px;
+        
     }
 
     .js-about {
@@ -299,7 +377,7 @@ img {
         transition: .3s ease-out;
     }
     
-    .js-portfolio {
+    .js-projects {
         color: black;
         border: 1px solid;
         padding: 10px;
@@ -321,9 +399,47 @@ img {
         margin-right: -10px;
         box-shadow: 0px 0px;
     }
+
+    .project-list {
+        display: flex;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
+    .container {
+        margin-left: 70px;
+        margin-right: 70px;
+    }
     
-  
+    .quiz-app {
+        width: 40%;
+    }
+    
+    .quiz-thumbnail img {
+        width: 10%;
+    }
+    
+    .gp-search {
+        width: 40%;
+    }
+    
+    .gp-thumbnail img {
+        width: 10%;
+    }
+    
+    .squad-finder {
+        width: 40%;
+    }   
+    
+    .kick-release {
+        width: 40%;
+    }
+    
+    .sf-thumbnail img {
+        
+    }
+    
+    .kr-thumbnail img {
+        width: 10%;
+    }
 }
