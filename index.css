@@ -16,6 +16,7 @@ body {
 
 h1 {
     border-bottom: 3px double black;
+    background: rgba(255, 0, 0, 0.288);
 }
 
 h2 {
@@ -28,7 +29,7 @@ h1, h2, h3 {
 }
 
 h1, h2 {
-    font-size: 28px;
+    font-size: 34px;
 }
 
 h3 {
@@ -132,8 +133,12 @@ main {
 }
 
 .contact {
-    color: rgb(145, 145, 0);
+    color: rgb(0, 47, 134);
     padding: 30px;
+}
+
+.contact h2 {
+    background: rgba(0, 102, 255, 0.432);
 }
 
 section {
@@ -145,16 +150,29 @@ section {
     width: 70%;
 }
 
+.quiz-thumbnails {
+    margin-top: 20px;
+    overflow: auto;
+    white-space: nowrap;
+    
+}
+
 .quiz-thumbnail img {
-    width: 16.5%;
+    width: 35%;
 }
 
 .gp-search {
     width: 70%;
 }
 
+.gp-thumbnails {
+    margin-top: 20px;
+    overflow: auto;
+    white-space: nowrap;
+}
+
 .gp-thumbnail img {
-    width: 16.5%;
+    width: 35%;
 }
 
 .squad-finder {
@@ -165,29 +183,24 @@ section {
     width: 70%;
 }
 
-.sf-thumbnail img {
-    width: 100%;
-    
-    margin-right: 10px;
+.kr-thumbnails {
+    margin-top: 20px;
+    overflow: auto;
+    white-space: nowrap;
 }
 
 .kr-thumbnail img {
-    width: 16.5%;
+    width: 35%;
 }
 
 .sf-thumbnails {
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top: 5%;
-    width: 70%;
-    border: 1px solid black;
-    overflow: scroll;
-    display: flex;
-    margin-bottom: 5%;
-    background-color: rgb(255, 180, 67);
-    -moz-box-shadow:    inset 0 0 20px #000000;
-    -webkit-box-shadow: inset 0 0 20px #000000;
-    box-shadow:         inset 0 0 20px #000000;
+    margin-top: 20px;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.sf-thumbnail img {
+    width: 35%;
 }
 
 img {
@@ -209,10 +222,29 @@ img {
     color: rgb(148, 96, 0);
 }
 
-.projects button {
+.projects-list {
+    padding: 30px;
+}
+
+.projects-list h2 {
+    color: rgb(148, 96, 0);
+    background: rgba(255, 166, 0, 0.336);
+}
+
+.quiz-section button {
+    color: rgb(90, 29, 29);
+    background: rgba(126, 64, 55, 0.404);
+}
+
+.quiz-section button:hover {
+    border-left: 5px solid salmon;
+    border-right: 5px solid salmon;
+    background-color: powderblue;
     color: black;
+}
+
+.projects button {
     font-weight: bolder;
-    background-color: rgb(148, 96, 0);
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     border-left: 5px solid black;
@@ -225,8 +257,8 @@ img {
 .project-buttons button:hover {
     border-left: 5px solid salmon;
     border-right: 5px solid salmon;
-    background-color: powderblue;
-    color: black;
+    background-color: rgba(0, 0, 0, 0.685);
+    color: rgb(255, 242, 66);
 }
 
 .project-buttons {
@@ -236,16 +268,68 @@ img {
     margin-right: 10px;
 }
 
+.quiz-section {
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+}
+
+.quiz-section h3 {
+    color: rgb(90, 29, 29);
+    background: rgba(126, 64, 55, 0.404);
+    border-bottom: 2px solid black;
+}
+
 .gameplay-section {
-    padding-top: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+}
+
+.gameplay-section h3 {
+    color: rgb(158, 103, 0);
+    background: rgba(255, 166, 0, 0.39);
+    border-bottom: 2px solid black;
+}
+
+.gameplay-section button {
+    color: rgb(145, 94, 0);
+    background: rgba(255, 166, 0, 0.39);
 }
 
 .squad-finder-section {
-    padding-top: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+}
+
+.squad-finder-section h3 {
+    color: rgb(50, 141, 14);
+    border-bottom: 2px solid black;
+    background: rgba(0, 128, 0, 0.336);
+}
+
+.squad-finder-section button {
+    color: rgb(50, 141, 14);
+    background: rgba(0, 128, 0, 0.336);
 }
 
 .kick-release-section {
-    padding-top: 50px;
+    
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+}
+
+.kick-release-section h3 {
+    color: rgb(0, 98, 190);
+    background: rgba(0, 98, 190, 0.322);
+    border-bottom: 2px solid black;
+}
+
+.kick-release-section button {
+    color: rgb(0, 98, 190);
+    background: rgba(0, 98, 190, 0.322);
 }
 
 .project-list-img {
@@ -254,47 +338,99 @@ img {
 }
 
 .nba-quiz-list {
-    width: 300px;
-    border: 1px solid black;
+    width: 250px; 
     border-radius: 10px;
     margin-bottom: 20px;
+    background: white;
+    transition: 1s ease-out;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.452);
 }
 
 .nba-quiz-list h3 {
     font-size: 32px;
+    color: rgb(90, 29, 29);
+    background: rgba(126, 64, 55, 0.404);
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+}
+
+.nba-quiz-list:hover {
+    background: rgb(240, 189, 95);
 }
 
 .gameplay-list {
-    width: 300px;
-    border: 1px solid black;
+    width: 250px;
+    
     border-radius: 10px;
     margin-bottom: 20px;
+    background: white;
+    transition: 1s ease-in-out;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.452);
+}
+
+.gameplay-list:hover {
+    background: orange;
 }
 
 .gameplay-list h3 {
     font-size: 32px;
+    color: rgba(187, 121, 0, 0.897);
+    background: rgba(255, 166, 0, 0.39);
+    border-bottom: 2px solid black;
+    border-radius: 10px;
 }
 
 .squad-list {
-    width: 300px;
-    border: 1px solid black;
+    width: 250px;
+    
     border-radius: 10px;
     margin-bottom: 20px;
+    background: white;
+    transition: 1s ease-out;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.452);
 }
 
 .squad-list h3 {
     font-size: 32px;
+    color: rgb(50, 141, 14);
+    border-bottom: 2px solid black;
+    background: rgba(0, 128, 0, 0.336);
+    border-radius: 10px;
+}
+
+.squad-list:hover {
+    background: rgb(6, 100, 6);
 }
 
 .kick-list {
-    width: 300px;
-    border: 1px solid black;
+    width: 250px;
+    
     border-radius: 10px;
     margin-bottom: 20px;
+    background: white;
+    transition: 1s ease-out;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.452);
 }
 
 .kick-list h3 {
     font-size: 32px;
+    color: rgb(0, 98, 190);
+    background: rgba(0, 98, 190, 0.322);
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+}
+
+.kick-list:hover {
+    background: rgb(60, 174, 250);
+}
+
+#back-btn {
+    color: black;
+    background: none;
+    border: none;
+    box-shadow: none;
+    text-align: left;
+    font-size: 18px;
 }
 
 
@@ -356,8 +492,8 @@ img {
     }
     
     .project-buttons {
-        margin-left: 100px;
-        margin-right: 100px;
+        margin-left: 250px;
+        margin-right: 250px;
         
     }
 
@@ -401,22 +537,47 @@ img {
     }
 
     .project-list {
-        display: flex;
+        
+        
+    }
+
+    .nba-quiz-list {
+        width: 300px;
+    }
+
+    .gameplay-list {
+        width: 300px;
+    }
+
+    .squad-list {
+        width: 300px;
+    }
+
+    .kick-list {
+        width: 300px;
+    }
+
+    #back-btn {
+        font-size: 26px;
     }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1080px) {
     .container {
         margin-left: 70px;
         margin-right: 70px;
     }
     
+    .project-list {
+        padding-top: 50px;
+    }
+
     .quiz-app {
         width: 40%;
     }
     
     .quiz-thumbnail img {
-        width: 10%;
+        width: 20%;
     }
     
     .gp-search {
@@ -424,7 +585,7 @@ img {
     }
     
     .gp-thumbnail img {
-        width: 10%;
+        width: 20%;
     }
     
     .squad-finder {
@@ -436,10 +597,13 @@ img {
     }
     
     .sf-thumbnail img {
-        
+        width: 20%;
     }
     
     .kr-thumbnail img {
-        width: 10%;
+        width: 20%;
+    }
+    .project-list {
+        display: flex;
     }
 }
