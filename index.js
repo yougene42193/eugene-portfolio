@@ -213,14 +213,6 @@ function renderPortfolio() {
     <section role="region" class="projects-list">
       <h2>Projects</h2>
       <div class="project-list">
-        <div class="nba-quiz-list">
-          <a class="js-nba-quiz"><h3>Nba Quiz</h3>
-          <img src="https://i.imgur.com/vwPPeFf.png" class="project-list-img" /></a>
-        </div>
-        <div class="gameplay-list">
-          <a class="js-gameplay"><h3>Gameplay Search</h3>
-          <img src="https://i.imgur.com/1ziRXOm.png" class="project-list-img" /></a>
-        </div>
         <div class="squad-list">
           <a class="js-squad-finder"><h3>Squad Finder</h3>
           <img src="https://i.imgur.com/kGyN2ci.png" class="project-list-img" /></a>
@@ -229,6 +221,14 @@ function renderPortfolio() {
           <a class="js-kick-release"><h3>Kick Release</h3>
           <img src='https://i.imgur.com/j0vhPMk.png' class='project-list-img' /></a>
         </div>
+        <div class="gameplay-list">
+          <a class="js-gameplay"><h3>Gameplay Search</h3>
+          <img src="https://i.imgur.com/1ziRXOm.png" class="project-list-img" /></a>
+        </div>
+        <div class="nba-quiz-list">
+          <a class="js-nba-quiz"><h3>Nba Quiz</h3>
+          <img src="https://i.imgur.com/vwPPeFf.png" class="project-list-img" /></a>
+        </div>  
       </div>
     </section>
   `);
