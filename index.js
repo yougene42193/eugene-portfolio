@@ -1,34 +1,47 @@
 'use strict';
 function handleMenu() {
   $('.nav-menu').on('click', function() {
-    console.log('menu clicked');
     $(this).next('ul').css('display', 'flex');
     closeMenu();
   });
 }
 
 function closeMenu() {
-  $('.nav-menu').on('click', function() {
-    console.log('close menu');
+  $('.nav-menu').on('click', function() {  
     $('ul').toggle();
   });
 }
 
 function generateAbout() {
   $('.js-about').on('click', function() {
-    console.log('About clicked');
     renderAbout();
     closeMenu();
   });
 }
 
+function renderHome() {
+  $('.container').html(`
+    <section role='region' class='home'>
+      <h1>Welcome to my portfolio</h1>
+    </section>
+  `)
+}
+
+function generateHome() {
+  $('.js-home').on('click', function() {
+    renderHome();
+    closeMenu();
+  })
+}
+
 function renderAbout() {
   $('.container').html(`
   <section role="region" class="about">
-    <h1>About</h1>
-      <p>Hi, my name is Eugene</p>
-      <p>I am a full-stack developer and an aspiring UI/UX designer.</p>
-      <p>I am currently a student in Thinkful's Full Stack Flex Bootcamp. I've always had a passion for design and while working with HTML, CSS, Javascript, and jQuery, I can see my idea's come to life.
+    <h2>About</h2>
+      <p>Hi, my name is Eugene.</p>
+      <img src="https://imgur.com/Jrlz7h4.png" alt="my picture" class="my-picture">
+      <p>I am a full-stack developer and a UI/UX designer.</p>
+      <p>I am currently a student in Thinkful's Full Stack Flex web development program. I've always had a passion for design and while working with HTML, CSS, Javascript, and jQuery, I can see my idea's come to life.
           When I'm not coding I love to play video games, watch and talk about sports.</p>
   </section>` );
   console.log('About generated');
@@ -307,7 +320,8 @@ function handleKickThumbnailChange() {
 
 function createPortfolio() {
   handleMenu();
-  renderAbout();
+  renderHome();
+  generateHome();
   generateAbout();
   generatePortfolio();
   generateContact();

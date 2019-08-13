@@ -10,13 +10,13 @@ html, body {
 }
 
 body {
-    background-color: rgb(245, 245, 245);
+    background-color: rgba(255, 255, 255, 0.151);
     color: black;
 }
 
 h1 {
     border-bottom: 3px double black;
-    background: rgba(255, 0, 0, 0.288);
+    background: blue(255, 0, 0, 0.288);
 }
 
 h2 {
@@ -60,7 +60,7 @@ button {
 nav {
     font-family: 'Assistant', sans-serif;
     font-weight: bold;
-    background: rgb(245, 245, 245);
+    background: white;
     box-shadow: 10px 10px 5px rgb(75, 75, 75);
     color: rgb(0, 7, 105);
     position: fixed;
@@ -70,10 +70,19 @@ nav {
 
 .nav-menu {
     position: relative;
-    background-color: rgb(245, 245, 245);
-    border: 2px solid rgb(245, 245, 245);
+    background-color: white;
+    border: 2px solid white;
     float: right;
     font-size: 16px;
+}
+
+.es-logo {
+    width: 35px;
+    border: none;
+}
+
+.my-picture {
+    width: 175px;
 }
 
 .js-about {
@@ -88,11 +97,15 @@ nav {
     color: black;
 }
 
+.menu-links {
+    margin-top: 35px;
+}
+
 .menu-bar {
-    width: 15px;
-    height: 2px;
-    background-color: black;
-    margin: 2px 0;
+    width: 25px;
+    height: 4px;
+    background-color: rgb(60, 166, 253);
+    margin: 5px 0;
 }
 
 .menu-links a:hover {
@@ -127,9 +140,21 @@ main {
     
 }
 
+.home {
+    color: rgb(0, 47, 134);
+}
+
+.home h1 {
+    background: rgba(0, 102, 255, 0.432);
+}
+
 .about {
     padding: 30px;
-    color: rgb(150, 0, 0);
+    color: rgb(0, 47, 134);
+}
+
+.about h2 {
+    background: rgba(0, 102, 255, 0.432);
 }
 
 .contact {
@@ -219,7 +244,7 @@ img {
 
 .projects {
     padding: 30px;
-    color: rgb(148, 96, 0);
+    color: rgb(0, 47, 134);
 }
 
 .projects-list {
@@ -227,8 +252,8 @@ img {
 }
 
 .projects-list h2 {
-    color: rgb(148, 96, 0);
-    background: rgba(255, 166, 0, 0.336);
+    color: rgb(0, 47, 134);
+    background: rgba(0, 102, 255, 0.432);
 }
 
 .quiz-section button {
@@ -435,6 +460,13 @@ img {
 
 
 @media only screen and (min-width: 760px) {
+
+    .es-logo {
+        margin-top: 10px;
+        width: 90px;
+        border: none;
+    }
+    
     ul {
         display: flex;
         float: right;
@@ -482,7 +514,7 @@ img {
         padding-left: 50px;
     }
 
-    .about, .portfolio, .contact {
+    .about, .projects, .contact, .projects-list {
         padding: 60px;
     }
 
@@ -506,27 +538,30 @@ img {
     }
 
     .js-about {
-        color: black;
+        color: rgb(247, 230, 0);
         border: 1px solid;
         padding: 10px;
         box-shadow: 5px 10px;
         transition: .3s ease-out;
+        background-color: rgb(60, 166, 253);
     }
     
     .js-projects {
-        color: black;
+        color: rgb(247, 230, 0);
         border: 1px solid;
         padding: 10px;
         box-shadow: 5px 10px;
         transition: .3s ease-out;
+        background-color: rgb(60, 166, 253);
     }
     
     .js-contact {
-        color: black;
+        color: rgb(247, 230, 0);
         border: 1px solid;
         padding: 10px;
         box-shadow: 5px 10px;
         transition: .3s ease-out;
+        background-color: rgb(60, 166, 253);
     }
 
     .menu-links a:hover {
@@ -560,9 +595,14 @@ img {
     #back-btn {
         font-size: 26px;
     }
+
+    .my-picture {
+        width: 250px;
+    }
 }
 
 @media only screen and (min-width: 1080px) {
+
     .container {
         margin-left: 70px;
         margin-right: 70px;
