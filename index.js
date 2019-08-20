@@ -239,7 +239,7 @@ function renderPortfolio() {
           <img src="https://i.imgur.com/1ziRXOm.png" class="project-list-img" /></a>
         </div>
         <div class="nba-quiz-list">
-          <a class="js-nba-quiz"><h3>Nba Quiz</h3>
+          <a class="js-nba-quiz"><h3>NBA Quiz</h3>
           <img src="https://i.imgur.com/vwPPeFf.png" class="project-list-img" /></a>
         </div>  
       </div>
