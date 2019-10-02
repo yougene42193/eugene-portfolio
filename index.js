@@ -261,7 +261,7 @@ function renderContact() {
           <div class="link-icons">
               <p><a class="gh-link" href="https://github.com/yougene42193" target="_blank"><i class="fa fa-github" style="font-size:24px"><span> Github</span></i></a></p>
               <p><a class="in-link" href="https://www.linkedin.com/in/eugene-song-760071178" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px"><span> Linkedin</span></i></a></p>
-              <p><a class="email-link" href="mailto: eugenesong21@gmail.com"><i class="fa fa-envelope" style="font-size:20px"><span> eugenesong21@gmail.com</span></i></a></p>
+              <p><a class="email-link" href="mailto: songeugene21@gmail.com"><i class="fa fa-envelope" style="font-size:20px"><span> songeugene21@gmail.com</span></i></a></p>
           </div>
       </section>`);
   console.log('contact generated');
