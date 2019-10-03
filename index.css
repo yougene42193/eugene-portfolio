@@ -104,7 +104,7 @@ nav {
 .menu-bar {
     width: 25px;
     height: 4px;
-    background-color: rgb(60, 166, 253);
+    background-color: rgb(85, 151, 252);
     margin: 5px 0;
 }
 
@@ -268,22 +268,19 @@ img {
     color: black;
 }
 
-.projects button {
-    font-weight: bolder;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    border-left: 5px solid black;
-    border-right: 5px solid black;
+.projects button {   
     border-radius: 4px;
     padding: 10px 30px;
-    transition: .5s ease-out;
+    border: 1px solid;  
+    box-shadow: 5px 10px;
+    transition: .3s ease-out;
 }
 
 .project-buttons button:hover {
-    border-left: 5px solid salmon;
-    border-right: 5px solid salmon;
-    background-color: rgba(0, 0, 0, 0.685);
-    color: rgb(255, 242, 66);
+    color: black;
+    margin-bottom: -5px;
+    margin-right: -10px;
+    box-shadow: 0px 0px;
 }
 
 .project-buttons {
@@ -543,7 +540,8 @@ img {
         padding: 10px;
         box-shadow: 5px 10px;
         transition: .3s ease-out;
-        background-color: rgb(60, 166, 253);
+        background-color: rgb(85, 151, 252);
+        border-radius: 4px;
     }
     
     .js-projects {
@@ -552,7 +550,8 @@ img {
         padding: 10px;
         box-shadow: 5px 10px;
         transition: .3s ease-out;
-        background-color: rgb(60, 166, 253);
+        background-color: rgb(85, 151, 252);
+        border-radius: 4px;
     }
     
     .js-contact {
@@ -561,7 +560,8 @@ img {
         padding: 10px;
         box-shadow: 5px 10px;
         transition: .3s ease-out;
-        background-color: rgb(60, 166, 253);
+        background-color: rgb(85, 151, 252);
+        border-radius: 4px;
     }
 
     .menu-links a:hover {
