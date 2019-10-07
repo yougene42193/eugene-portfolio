@@ -40,8 +40,8 @@ function renderAbout() {
     <h2>About</h2>
       <p>Hi, my name is Eugene.</p>
       <img src="https://imgur.com/Jrlz7h4.png" alt="my picture" class="my-picture">
-      <p>I am a full-stack developer and a UI/UX designer.</p>
-      <p>I am currently a student in Thinkful's Full Stack Flex web development program. I've always had a passion for design and while working with HTML, CSS, Javascript, and jQuery, I can see my idea's come to life.
+      <p>I am a frontend developer and a web developer.</p>
+      <p>I have completed Thinkful's Full Stack Flex web development program. I've always had a passion for design and while working with HTML, CSS, Javascript, and jQuery, I can see my idea's come to life.
           When I'm not coding I love to play video games, watch and talk about sports.</p>
   </section>` );
   console.log('About generated');
