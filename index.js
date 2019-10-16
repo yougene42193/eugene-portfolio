@@ -22,7 +22,8 @@ function generateAbout() {
 function renderHome() {
   $('.container').html(`
     <section role='region' class='home'>
-      <h1>Welcome to my portfolio</h1>
+      <h1>Welcome to my portfolio.</h1>
+      <p>I'm Eugene, a web developer and a frontend developer.</p>
     </section>
   `)
 }
