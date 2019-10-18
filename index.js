@@ -23,7 +23,7 @@ function renderHome() {
   $('.container').html(`
     <section role='region' class='home'>
       <h1>Welcome to my portfolio.</h1>
-      <p>I'm Eugene, a web developer and a frontend developer.</p>
+      <p>Take a look around to learn more <a href=#about class="js-about" id="p-about">about me</a> and see some examples of my <a href=#projects class="js-projects" id="p-projects">recent work</a>. Want to get in touch to discuss future work? Reach out to me on the <a href=#contact class="js-contact" id="p-contact">contact page</a>.</p>
     </section>
   `)
 }
